@@ -1,5 +1,5 @@
 # Weather App
-A simple, responsive weather application built using HTML, CSS, and JavaScript. This app allows users to check current weather conditions based on their location or any city they enter. It fetches real-time weather data from a third-party API to provide accurate and up-to-date information, such as temperature, humidity, and weather conditions.
+A simple, responsive weather application built using HTML, CSS, and JavaScript. This app allows users to check current weather conditions based on their location or any city they enter. It fetches real-time weather data from an external API to provide accurate and up-to-date information, such as temperature, humidity, and weather conditions.
 
 # Features:
 - **Real-time weather data:** Fetches weather information from a public weather API.
