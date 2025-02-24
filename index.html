@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
+    <div id="main">
+        <div id="left">
+            <div id="inp">
+                <input type="text" placeholder="Enter City">
+                <i class="ri-search-line"></i>
+            </div>
+            <img src="//cdn.weatherapi.com/weather/64x64/day/143.png" alt="">
+            <h1>00</h1>
+            <h2>Condition</h2>
+            <h4>Localtime : 00:00</h4>
+            <h3>City</h3>
+            <h6>Region</h6>
+            <h5>Last updated : 00-00-0000 00:00</h5>
+            <i id="menuUp" class="ri-arrow-up-wide-line"></i>
+        </div>
+
+        <div id="right">
+            <i id="menuDown" class="ri-arrow-down-wide-line"></i>
+            <nav>
+                <h2>Today</h2>
+            </nav>
+            <div id="all">
+                <div class="boxes wind">
+                    <h2>Wind</h2>
+                    <h1>0 km/h</h1>
+                </div>
+
+                <div class="boxes humidity">
+                    <h2>Humadity</h2>
+                    <h1>0%</h1>
+                </div>
+
+                <div class="boxes pressure">
+                    <h2>Pressure</h2>
+                    <h1>0 mb</h1>
+                </div>
+
+                <div class="boxes feels">
+                    <h2>Feels Like</h2>
+                    <h1>0 °C</h1>
+                </div>
+
+                <div class="boxes uv">
+                    <h2>UV Index</h2>
+                    <h1>0</h1>
+                </div>
+
+                <div class="boxes latt">
+                    <h2>Lattitude</h2>
+                    <h1>00.00</h1>
+                </div>
+
+                <div class="boxes long">
+                    <h2>Longitude</h2>
+                    <h1>00.00</h1>
+                </div>
+
+                <div class="boxes tz">
+                    <h2>Timezone</h2>
+                    <h1>Unknown</h1>
+                </div>
+
+                <div class="boxes cntry">
+                    <h2>Country</h2>
+                    <h1>Unknown</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

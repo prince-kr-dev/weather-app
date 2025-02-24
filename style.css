@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: "Ubuntu", serif;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left{
+    height: 100%;
+    width: 30%;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#left input{
+    height: 2.5vw;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #EEEDF0;
+    color: black;
+    font-size: 1.2vw;
+    font-weight: 500;
+    padding: 0 1vw;
+    border-radius: 5vw;
+}
+#left input[type="text"]{
+    font-size: 1.2vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4e4e4e;
+}
+#left #inp{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#inp i{
+    position: absolute;
+    right: -1%;
+    background-color: rgb(65, 153, 255);
+    padding: 0.45vw 2vw;
+    font-size: 1.5vw;
+    border-radius: 5vw;
+    color: #EEEDF0;
+}
+
+#left img{
+    height: 10vw;
+    width: 10vw;
+    object-fit: cover;
+    margin: 2vw 0 0 0;
+}
+
+#left h1{
+    font-size: 9vw;
+    font-weight: 400;
+    margin-top: 1vw;
+    position: relative;
+}
+#left h1 sup{
+    font-weight: 300;
+}
+#left h1::after{
+    content: "°C";
+    position: absolute;
+    left: 95%;
+    top: -27%;
+    font-size: 6vw;
+}
+
+
+#left h2{
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+#left h4{
+    font-size: 1.5vw;
+    font-weight: 400;
+    margin-top: 1vw;
+    background-color: #c8d1f7;
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+}
+#left h3{
+    font-size: 3vw;
+    font-weight: 400;
+    margin-top: 3vw;
+}
+#left h5{
+    font-size: 1vw;
+    font-weight: 500;
+    margin-top: 4vw;
+}
+#left h6{
+    font-size: 1vw;
+    font-weight: 500;
+    margin-top: 0.8vw;
+}
+#menuUp{
+    display: none;
+}
+
+#right{
+    height: 100%;
+    width: 70%;
+    background-color: #EFEFEF;
+}
+#right i{
+    display: none;
+}
+#right nav{
+    height: 13%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+}
+nav h2{
+    font-size: 2.5vw;
+    font-weight: 400
+}
+
+#right #all{
+    height: 87%;
+    width: 100%;
+    padding: 0 2vw;
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 30% 30% 30%;
+    row-gap: 2vw;
+    column-gap: 3vw;
+}
+
+#all .boxes{
+    height: 10vw;
+    width: 20vw;
+    background-color: #4d70ff;
+    border-radius: 1.5vw;
+    padding: 1.5vw 1vw;
+}
+
+
+.boxes h2{
+    font-size: 1.7vw;
+    color: rgba(240, 255, 255, 0.849);
+    font-weight: 350;
+}
+.boxes h1{
+    font-size: 2.2vw;
+    color: azure;
+    font-weight: 300;
+    margin-top: 0.4vw;
+}
+
+
+@media (max-width:600px) {
+    body{
+        overflow-y: hidden;
+    }
+    #main{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #left{
+        min-height: 100%;
+        width: 100%;
+        padding: 8vw;
+    }
+    
+    #left input{
+        height: 10vw;
+        width: 100%;
+        padding: 1vw 4vw;
+    }
+    #left input[type="text"]{
+        font-size: 5vw;
+        font-weight: 700;
+    }
+    #left #inp{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    #inp i{
+        right: 0%;
+        font-size: 7.2vw;
+        padding: 1vw 7vw;
+    }
+    
+    #left img{
+        height: 40vw;
+        width: 40vw;
+    }
+    
+    #left h1{
+        font-size: 25vw;
+        font-weight: 400;
+    }
+    #left h1::after{
+        top: -1%;
+        font-size: 10vw;
+    }
+    
+    
+    #left h2{
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
+    #left h4{
+        font-size: 6vw;
+        padding: 1vw 3vw;
+        border-radius: 1vw;
+        margin-bottom: 15vw;
+        margin-top: 5vw;
+        background-color: transparent;
+    }
+    #left h3{
+        font-size: 12vw;
+    }
+    #left h5{
+        font-size: 3vw;
+        font-weight: 300;
+        margin-top: 10vw;
+    }
+    #left h6{
+        font-size: 3vw;
+    }
+
+    #menuUp{
+        display: block;
+        font-size: 10vw;
+        text-align: center;
+        background-color: #72ff85;
+        border-radius: 10vw;
+        color: rgb(0, 0, 0);
+        margin-top: 6vw;
+        padding: 1vw 5vw;
+    }
+
+    #right{
+        height: 100%;
+        width: 100%;
+        padding: 1vw 8vw 8vw 6vw;
+        position: absolute;
+        top: 100%;
+        transition: all ease 0.5s;
+    }
+    #right i{
+        display: block;
+        font-size: 10vw;
+        text-align: center;
+        background-color: #72ff85;
+        border-radius: 10vw;
+        color: rgb(0, 0, 0);
+    }
+
+    #right nav{
+        height: 10%;
+    }
+    nav h2{
+        font-size: 10vw;
+    }
+    
+    #right #all{
+        height: 88%;
+        display: grid;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        grid-template-columns: 100%;
+        row-gap: 2vw;
+    }
+    
+    #all .boxes{
+        height: 15vw;
+        width: 100%;
+        background-color: #6281ff;
+        border-radius: 3vw;
+        padding: 2vw 3vw;
+    }
+    .boxes h2{
+        font-size: 3vw;
+        color: rgba(240, 255, 255, 0.849);
+        font-weight: 350;
+    }
+    .boxes h1{
+        font-size: 6vw;
+        line-height: 7vw;
+        font-weight: 300;
+    }
+}
